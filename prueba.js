@@ -3,6 +3,7 @@
 const axios = require('axios');
 
 module.exports.main = async (event) => {
+    console.log("asdsa");
     resolve({
         statusCode: 200,
         headers: {
