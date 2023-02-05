@@ -1,0 +1,21 @@
+service: biometry
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  stage: ${env:SEED_STAGE_BRANCH,env:SEED_BRANCH,git:branch}
+  runtime: nodejs12.x
+  region: 'sa-east-1'
+
+functions:
+  prueba:
+    handler: prueba.main
+    events:
+      - http:
+          path: prueba
+          method: post
+          cors: true
+plugins:
+  - serverless-plugin-git-variables
+  - serverless-domain-manager
+  - serverless-plugin-ifelse

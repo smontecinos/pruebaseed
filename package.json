@@ -1,0 +1,25 @@
+{
+  "name": "pruebaseed",
+  "version": "0.0.1",
+  "main": "prueba.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "serverless-bundle test"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.719.0",
+    "axios": "^0.19.2",
+    "bluebird": "^3.5.0",
+    "dotenv": "^8.2.0",
+    "jsdom": "^16.4.0",
+    "serverless-plugin-git-variables": "^4.0.0",
+    "serverless-plugin-include-dependencies": "^4.1.0",
+    "validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "serverless-domain-manager": "^5.0.0",
+    "serverless-mocha-plugin": "^1.12.0",
+    "serverless-offline": "^6.8.0",
+    "serverless-plugin-ifelse": "^1.0.6"
+  }
+}
