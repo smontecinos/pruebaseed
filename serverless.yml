@@ -15,7 +15,3 @@ functions:
           path: prueba
           method: post
           cors: true
-plugins:
-  - serverless-plugin-git-variables
-  - serverless-domain-manager
-  - serverless-plugin-ifelse
