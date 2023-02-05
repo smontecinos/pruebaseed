@@ -1,4 +1,4 @@
-service: biometry
+service: prueba-seed
 frameworkVersion: '2'
 
 provider:
